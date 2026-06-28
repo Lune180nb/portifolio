@@ -1,0 +1,18 @@
+
+.sobre-mim{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:30vh;
+}
+
+.sobre-mim .sobre-mim-descricao{
+  color:var(--branco);
+  max-width:200px;
+}
+
+
+
+
+
+

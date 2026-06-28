@@ -7,12 +7,15 @@
   <title>Document</title>
   <!--CSS e Bootstrap-->
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href=" css/sobre-mim.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <!-------------------------->
 </head>
 <body>
   <!--Header-->
   <header>
+    <div id="overlay" class = "fundo-preto"></div>
     <h2>LUNE</h2>
       <nav>
         <ul class = "lista-nav">
@@ -24,11 +27,11 @@
         
         <button id="btn-nav" class = "btn-nav"><i class="bi bi-list"></i></button>
 
-        
+
         <section id = "menu-responsivo" class = "responsivo">
           <section class="topo-menu">
             <button id="btn-voltar" class = "btn-voltar"><i class="bi bi-arrow-left-square"></i></button>
-            <img src="" alt="">
+            <img src="Lua.png" alt="imagem de lua com estrelas">
           </section>
           
           <section class="links-responsivo">
@@ -45,6 +48,31 @@
       <a href="#" class = "link-whatsapp">Crie site</a>
   </header>
   <!-------------------------->
+  <main>
+    <!--Hero-->
+    <section class="hero">
+      <div class="img-hero">
+        <img src="Lua.png" alt="imagem da lua">
+      </div>
+      <div class="info">
+        <h2>ME CHAMO <span>LUNE</span></h2>
+        <p>Sou especializada em <span>desenvolvimento web</span> mais para front-end, crio sites personalizados com planejamento de design</p>
+          <a href="#" class = "link-whatsapp">Venha personalizar</a>
+      </div>
+    </section>
+    <!-------------------------->
+    <!--Sobre mim-->
+    <section class="sobre-mim">
+      <div class="sobre-mim-descricao">
+        <h2>SOBRE MIM</h2>
+        <p>Ajudo empresas e profissionais a fortalecer sua presença online por meio de sites modernos,oferecendo uma boa experiencia para os clientes</p>
+      </div>
+      <div class="img-sobre-mim">
+        <img src="" alt="">
+      </div>
+    </section>
+    <!-------------------------->
+  </main>
   <script src = "script.js"></script>
 </body>
 </html>
