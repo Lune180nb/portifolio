@@ -1,0 +1,18 @@
+
+.sites{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+}
+
+.sites .projetos ul{
+  display: flex;
+  gap:2rem;
+}
+
+
+
+
+
