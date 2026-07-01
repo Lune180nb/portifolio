@@ -8,6 +8,10 @@
   font-family: "Lexend", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 :root{
   --roxo-neon:#A855F7;
   --roxo-claro:#E9D5FF;
@@ -26,8 +30,15 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 2rem 4rem;
-  margin:0 auto;
   width:100%;
+  position:fixed;
+  transition: transform 0.5s ease,box-shadow 0.5s ease;
+  z-index: 9999;
+}
+
+header.scroll{
+  background-color:var(--preto);
+  box-shadow: 0 4px 20px rgba(168,85,247,0.3);
 }
 
 header h2{
@@ -54,7 +65,7 @@ header nav .responsivo{
   height:100vh;
   width:70%;
   transform:translateX(100%);
-  transition:transform 2s ease;
+  transition:transform 1s ease;
   pointer-events: none;
   z-index: 9999;
 }
@@ -79,18 +90,17 @@ header nav .responsivo .links-responsivo .lista{
 }
 
 header nav .responsivo .links-responsivo .lista li a{
-  display: inline-block;
+  display: block;
   width:100%;
   text-decoration: none;
   color:var(--branco);
-  padding: 2rem 4rem;
+  padding: 2rem 6.2rem;
   font-size:1.5rem;
   white-space: nowrap;
 }
 
 header nav .responsivo .links-responsivo .lista li a:hover{
   background-color:var(--roxo-escuro);
-  width:100%;
   transition:all 1s ease;
 }
 
@@ -114,11 +124,11 @@ header nav .lista-nav li a::after{
   left:0;
   height:2px;
   background-color:var(--roxo-neon);
+  transition:width 0.5s ease;
 }
 
 header nav .lista-nav li a:hover::after{
   width:100%;
-  transition: width 0.5s ease;
 }
 
 header nav .lista-nav li a:hover{
@@ -132,7 +142,7 @@ header .link-whatsapp, header .responsivo .link-whatsapp{
   border-radius:10px;
   padding:1rem;
   box-shadow: 0 0 16px var(--roxo-neon);
-  transition: all 0.5s ease;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease,transform 0.5s ease;
   text-decoration: none;
   color: var(--branco);
 }

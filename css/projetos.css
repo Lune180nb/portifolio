@@ -4,15 +4,101 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 40vh;
+  min-height: 50vh;
+}
+
+.sites .projeto-descricao{
+  color:var(--branco);
+  margin-bottom:2rem;
+  font-size: clamp(2rem,5vw,4rem);
+}
+
+.sites .projeto-descricao .bi-code-square{
+  color:var(--roxo-neon);
+  text-shadow: 0 0 8px var(--roxo-neon);
+}
+
+.sites .projeto-descricao span{
+  color:var(--roxo-neon);
+  text-shadow: 0 0 8px var(--roxo-neon);
 }
 
 .sites .projetos ul{
   display: flex;
+  justify-content: center;
   gap:2rem;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
+.sites .projetos ul li{
+  display: flex;
+  flex-direction: column;
+  
+  padding: 2rem;
+  width:100%;
+  max-width: 400px;
+  min-height:400px;
+  background-color:rgba(0,0,0,0.5);
+  border-radius: 2rem;
+  border:2px solid var(--roxo-neon);
+  box-shadow: 0 0 8px var(--roxo-neon);
+  transition: box-shadow 0.5s, background-color 0.5s, transform 0.5s;
+}
 
+.sites .projetos ul li:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 0 24px var(--roxo-neon);
+}
 
+.sites .projetos ul li img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.sites .projetos ul li .projetos-sites-info h2{
+  color:var(--branco);
+}
+
+.sites .projetos ul li .projetos-sites-info{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  flex:1;
+  padding: 1.5rem 0 0;
+  text-align: center;
+}
+
+.sites .projetos ul li .projetos-sites-info .link-site{
+  display: inline-block;
+  background-color:var(--roxo-neon);
+  border-radius:10px;
+  padding:1rem;
+  box-shadow: 0 0 16px var(--roxo-neon);
+  transition: box-shadow 0.5s, background-color 0.5s, transform 0.5s ;
+  text-decoration: none;
+  color: var(--branco);
+  margin-top:auto;
+}
+
+.sites .projetos ul li .projetos-sites-info .link-site:hover{
+  background-color:var(--roxo-escuro);
+  box-shadow:0 0 24px var(--roxo-neon);
+  transform: translateY(-2px);
+}
+
+@media(max-width:768px){
+  .sites{
+    padding: 2rem;
+  }
+
+ .sites .projetos ul li img{
+  width:100%;
+  height:180px;
+  border-radius: 1rem;
+}
+}
 
 

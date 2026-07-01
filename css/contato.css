@@ -1,0 +1,69 @@
+
+.contato{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  padding: 4rem 2rem;
+}
+
+.contato .text-contato{
+  color:var(--branco);
+  margin-bottom:2rem;
+  font-size:clamp(2rem,5vw,4rem);
+}
+
+ .contato i{
+  color:var(--roxo-neon);
+}
+
+.contato .text-contato span{
+  color:var(--roxo-neon);
+  text-shadow: 0 0 8px var(--roxo-neon);
+}
+
+.contato .links-contato{
+  display: flex;
+  font-size:clamp(1.5rem,5vw,3rem);
+  gap:4rem;
+}
+
+.contato .links-contato a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:2px solid var(--roxo-neon);
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: 0 0 8px var(--roxo-neon);
+  transition:background-color 0.5s, box-shadow 0.5s, transform 0.5s;
+}
+
+.contato .links-contato a:hover{
+  background-color:var(--roxo-escuro);
+  box-shadow: 0 0 24px var(--roxo-escuro);
+  transform: scale(1.1);
+}
+
+.contato .links-contato a:hover i{
+  color:var(--roxo-claro);
+  text-shadow: 0 0 8px var(--roxo-claro);
+}
+
+@media (max-width:768px){
+  .contato{
+    padding: 2rem;
+  }
+  .contato .links-contato{
+    gap:2rem;
+  }
+  .contato .links-contato a{
+    padding: 1rem;
+  }
+}
+
+
+
+
+

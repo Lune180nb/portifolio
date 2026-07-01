@@ -3,16 +3,20 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height:30vh;
+  gap:3rem;
+  padding: 2rem 4rem;
+  height:70vh;
 }
 
 .sobre-mim .sobre-mim-descricao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color:var(--branco);
 }
 
 .sobre-mim .sobre-mim-descricao h2{
   font-size:clamp(2rem,5vw,4rem);
-  white-space: nowrap;
 }
 
 .sobre-mim .sobre-mim-descricao h2 span{
@@ -28,6 +32,7 @@
 }
 
 .sobre-mim .img-sobre-mim img{
+  display: block;
   width:100%;
   max-width:300px;
 }
