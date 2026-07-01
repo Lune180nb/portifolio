@@ -6,6 +6,7 @@ footer{
   min-height:10vh;
   padding: 2rem;
   border-top:1px solid var(--roxo-neon) ;
+  white-space: nowrap;
 }
 
 footer p{
