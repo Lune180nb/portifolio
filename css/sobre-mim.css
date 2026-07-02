@@ -5,7 +5,7 @@
   align-items: center;
   gap:3rem;
   padding: 2rem 4rem;
-  height:70vh;
+  min-height:70vh;
 }
 
 .sobre-mim .sobre-mim-descricao{
@@ -59,6 +59,17 @@
   
 }
 
+@media(max-width:480px){
+  .sobre-mim{
+    padding: 2rem 1rem;
+  }
+  .sobre-mim .sobre-mim-descricao p{
+    max-width: 100%;
+  }
+  .sobre-mim .img-sobre-mim img{
+    max-width:150px;
+  }
+}
 
 
 
