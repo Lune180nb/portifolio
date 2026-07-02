@@ -19,14 +19,14 @@
 }
 
 .hero .info p{
-  font-size:clamp(1rem,2vw,1.5rem);
+  font-size:clamp(1rem,2vw,2rem);
   width:100%;
   max-width:500px;
   margin-bottom:1rem;
 }
 
 .hero .info h2{
-  font-size:clamp(1.5rem,5vw,3.5rem);
+  font-size:clamp(1.5rem,5vw,4rem);
   margin-bottom:1rem;
 }
 
